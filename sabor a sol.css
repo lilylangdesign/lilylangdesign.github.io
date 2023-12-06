@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	box-sizing: border-box;
+}
+body{
+	background: #ffffff;
+	color: #1B3C33;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.logo{
+    width: 85px;
+}
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+nav ul li a{
+	color: #1B3C33;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+}
+nav ul li a::after{
+	content: '';
+	width: 0;
+	height: 3px;
+	background: #8C3B66;
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	tranisiton: 0.5s;
+}
+nav ul li a:hover::after{
+	width: 100%;
+}
+body h2 {
+	padding-bottom: 5px;
+    padding-top: 20px;
+    margin-left: 60px;
+	font-size: 180%;
+}
+p {
+    font-size: 20px;
+    color: #1B3C33;
+    max-width: 1000px;
+	align-content: center;
+	text-align: center;
+    padding-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+main {
+    margin-top: 10px;
+	margin-bottom: 20px;
+    text-align: center;
+}
+section{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+gallery{
+	text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+img{
+	padding: 10px;	
+}
+footer {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}

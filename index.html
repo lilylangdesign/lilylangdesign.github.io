@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div id="header">
+	<div class="container">
+		<nav>
+			<img src="Assets/3.0 logos-08.png" alt="Icon" class="logo">
+			<ul>
+			  <li><a href="index.html">Portfolio</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+		  </ul>
+	  </nav>
+	</div>	
+</div>
+<!-- -----------portfolio------------- -->
+<h2 style="">PORTFOLIO</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('package')"> Package Design</button>
+  <button class="btn" onclick="filterSelection('branding')"> Brand Identity Design</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column package">
+    <div class="content"> 
+		<a href="orchardcraft.html">
+			<img src="Assets/orchardcraft.png" alt="Orchardcraft Brewing Co." style="width:100%">
+		</a>
+      <h4>Orchardcraft Brewing Co.</h4>
+    </div>
+  </div>
+  <div class="column branding">
+    <div class="content">
+		<a href="sunkissed2.html">
+    		<img src="Assets/sunkissed.png" alt="Sunkissed" style="width:100%">
+		</a>
+      <h4>Sunkissed</h4>
+    </div>
+  </div>
+  <div class="column branding">
+    <div class="content">
+		<a href="bright2.html">
+    		<img src="Assets/bright.png" alt="Bright" style="width:100%">
+		</a>
+		<h4>Bright</h4>
+    </div>
+  </div>
+  <div class="column package">
+    <div class="content">
+		<a href="barkday bites.html">
+   			<img src="Assets/barkday bites.png" alt="Barkday Bites" style="width:100%">
+		</a>
+      <h4>Barkday Bites</h4>
+    </div>
+  </div>
+  <div class="column branding">
+    <div class="content">
+		<a href="sabor.html">
+    		<img src="Assets/sabor a sol.png" alt="Sabor a Sol" style="width:100%">
+		</a>
+      <h4>Sabor a Sol</h4>
+    </div>
+  </div>
+
+  <div class="column package">
+    <div class="content">
+		<a href="thrive2.html">
+      		<img src="Assets/thrive.png" alt="Thrive" style="width:100%">
+		</a>
+      <h4>Thrive Hygienics</h4>
+    </div>
+  </div>
+  <div class="column branding">
+    <div class="content">
+		<a href="scoops.html">
+    		<img src="Assets/scoops and swirls.png" alt="Scoops + Swirls" style="width:100%">
+		</a>
+      <h4>Scoops + Swirls</h4>
+    </div>
+  </div>
+  <div class="column branding">
+    <div class="content">
+		<a href="aeras2.html">
+    		<img src="Assets/aeras.png" alt="Aeras Skate Co." style="width:100%">
+		</a>
+      <h4>Aeras Skate Co.</h4>
+    </div>
+  </div>
+  <div class="column branding">
+    <div class="content">
+		<a href="difky2.html">
+    		<img src="Assets/difky 2.png" alt="Sisters Road to Freedom, Inc." style="width:100%">
+		</a>
+      <h4>Sisters Road to Freedom, Inc.</h4>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+<footer>&copy; 2023 Lily Lang Design</footer>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+	
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	box-sizing: border-box;
+}
+body{
+	background: #ffffff;
+	color: #1b3c33;
+}
+.container{
+    padding: 10px 10%;
+    width: auto;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.logo{
+    width: 85px;
+}
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+nav ul li a{
+	color: #1B3C33;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+}
+nav ul li a::after{
+	content: '';
+	width: 0;
+	height: 3px;
+	background: #8C3B66;
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	tranisiton: 0.5s;
+}
+nav ul li a:hover::after{
+	width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  padding: 20px;
+  font-family: Arial;
+}
+
+body h2 {
+	font-size: 35px;
+	padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 120px;
+
+}
+footer {
+    text-align: center;
+    height: 65px;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+	background-color: white;
+  	color: #1B3C33;
+}
+section figure img {
+    float: left;
+    margin-left: 115px;
+    padding-right: 26px;
+}
+section figure figcaption {
+    margin-left: 700px;
+    top: 0px;
+    padding-top: 80px;
+    margin-right: 81px;
+    font-size: 700%;
+    color: #1B3C33;
+    text-align: left;
+    word-spacing: 0pt;
+}
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 60px;
+    font-size: 130%;
+    position: absolute;
+    max-width: 1500px;
+    min-height: 100%;
+}
+.container {
+  position: relative;
+}
+
+.blurb {
+    position: absolute;
+    background: #98a3ad;
+    width: 800px;
+    left: 50%;
+    top: 0px;
+    height: 235px;
+}

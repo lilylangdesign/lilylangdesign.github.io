@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	box-sizing: border-box;
+}
+body{
+	background: #FFFFFF;
+	color: #1B3C33;
+}
+.container{
+    padding: 10px 10%;
+    width: auto;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.logo{
+    width: 85px;
+}
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+nav ul li a{
+	color: #1B3C33;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+}
+nav ul li a::after{
+	content: '';
+	width: 0;
+	height: 3px;
+	background: #8C3B66;
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	tranisiton: 0.5s;
+}
+nav ul li a:hover::after{
+	width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+    border: solid thin;
+    outline: #1B3C33;
+    padding: 12px 16px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    color: #1B3C33;
+}
+
+.btn:hover {
+  background-color: #4F7E70;
+}
+
+.btn.active {
+    border: solid thin;
+    outline: #1B3C33;
+	background-color: #1B3C33;
+    color: white;
+}
+.btn.active:hover {
+  background-color: #8C3B66;
+}
+
+body h2 {
+	font-size: 35px;
+	padding-bottom: 14px;
+    padding-top: 20px;
+    padding-left: 120px;
+}
+h4{
+	font-size: 18px;
+	padding-top: 5px;
+}
+#myBtnContainer{
+	padding-bottom: 14px;
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+footer {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
